@@ -1,0 +1,39 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+#fixed {
+  background-color: gray;
+  padding: 2rem;
+  position: fixed;
+  margin: 0%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+h1 {
+  margin-left: 10rem;
+  margin-bottom: 2rem;
+}
+#relative {
+  background-color: gray;
+  padding: 6rem 10rem;
+  position: relative;
+  text-align: center;
+}
+#absolute {
+  background-color: darkgray;
+  padding: 3rem 3rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(25%);
+}
+p {
+  line-height: 1.8rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}

@@ -1,0 +1,111 @@
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <title>Michael McQuade</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      padding: 1rem;
+    }
+
+    main {
+      padding: 0 4rem;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    section {
+      flex-basis: 100%;
+    }
+
+    section:nth-of-type(1) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    h1 {
+      flex-basis: 100%;
+    }
+
+    img {
+      flex-basis: 100%;
+      max-width: 200px;
+      max-height: 200px;
+      margin-right: 1rem;
+    }
+
+    p {
+      margin: 0;
+      flex-basis: 100%;
+    }
+
+    @media (min-width: 767px) {
+      main {
+        padding: 0 8rem;
+      }
+      section {
+        flex-basis: 30%;
+      }
+      section:nth-of-type(1) {
+        flex-basis: 60%;
+      }
+      img {
+        flex-basis: 30%;
+      }
+      p {
+        flex-basis: 60%;
+      }
+    }
+
+    ul {
+      font-weight: 700;
+    }
+
+    ul a {
+      font-weight: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <header>Student Bio</header>
+  <main>
+    <section>
+      <h1>Michael McQuade</h1>
+      <img alt='Michael and a giraffe at Bioparque' src='https://avatars0.githubusercontent.com/u/10459772?s=200&u=1736866878379ac1349bd2ef3e0f2738b1380b6a'
+      />
+      <p>
+        I'm a Computer Science student at Oklahoma State University. I spent the last year studying my major abroad in Mexico City,
+        Mexico. The experience helped me broaden my horizons as a denizen of the world while learning Computer Science from
+        the most
+        <a href='http://www.itesm.mx'>prestigious school in Mexico</a>.
+      </p>
+    </section>
+    <section>
+      <h1>Contact Info</h1>
+      <ul>
+        <li>Email:
+          <a href='mailto:michael@giraffesyo.io'>michael@giraffesyo.io</a>
+        </li>
+        <li>Github:
+          <a href='https://github.com/giraffesyo'>giraffesyo</a>
+        </li>
+        <li>Portfolio:
+          <a href='https://giraffesyo.io'>giraffesyo.io</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
