@@ -1,4 +1,151 @@
-Name {
-  color: cornsilk;
-  background: #4aaaa5;
+/*Set body background and without any margin or border*/
+body {
+  margin: 0rem;
+  padding: 0rem;
+  background-image: url("background.png");
+}
+/*Set Header with its bottom border*/
+header {
+  height: 4rem;
+  background-color: #ffffff;
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/*Set main logo*/
+#Name {
+  margin-left: 10%;
+  height: 100%;
+  padding: 0 2rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  color: #ffffff;
+  float: left;
+  background-color: #4aaaa5;
+}
+/*Format of all links*/
+a {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #777777;
+  line-height: 4rem;
+  padding: 0rem 2rem;
+  height: 100%;
+}
+/*Wrapper of links for in-line style*/
+nav {
+  float: right;
+  margin-right: 8rem;
+}
+/*Border for wrappers without the last border*/
+nav > a:not(:last-of-type) {
+  border-right: 1px solid #ccc;
+}
+/*Main Content style*/
+#Content {
+  border: 1px solid #dddddd;
+  width: 80%;
+  margin: 2rem auto;
+  background-color: #ffffff;
+}
+/*Aboutme, portfolio, contact title*/
+h1 {
+  margin: 0;
+  position: relative;
+  left: 2rem;
+  width: 93%;
+  font-family: "Times New Roman", Times, serif;
+  color: #4aaaa5;
+  font-size: 2rem;
+  padding: 2rem 0rem 1rem 0rem;
+  border-bottom: 3px solid #ccc;
+}
+/*This wraps all portfolio images, display: flex activates the flex box and 
+and the wrap is to put it on the next line*/
+.AllPortfolios {
+  margin: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*For individial images, flex basis at 25 will tell the page how much space each 
+image occupies from its father (allportfolios) and inline block is put it on
+one line*/
+.portfolio {
+  padding: 1rem;
+  flex-basis: 25%;
+  display: inline-block;
+  position: relative;
+}
+/*Image to occupy all the portfolio space that was assigned to it*/
+.portfolio > img {
+  width: 100%;
+}
+/*Text on top of each portfolio image*/
+.portfolio > span {
+  position: absolute;
+  bottom: 20%;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  padding: 0.5rem 0rem;
+  text-align: center;
+  width: calc(100% - 2rem);
+}
+/*Aboutme photo*/
+#PhotOfMe {
+  margin: 2em 2rem 0rem 2rem;
+  width: 30%;
+  float: left;
+}
+/*Aboutme paragraph*/
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777777;
+  padding: 1rem 2rem;
+  line-height: 2.2rem;
+}
+/*This wraps the mail area except the title*/
+.MailContent {
+  line-height: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777777;
+  width: 90%;
+  padding: 1rem 2rem 2rem 2rem;
+}
+/*Style for input boxes*/
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 0.5rem 0rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+/*Style for submit button*/
+input[type="submit"] {
+  background-color: #4aaaa5;
+  color: #dddddd;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+footer {
+  height: 3rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  border-top: 0.5rem solid #4aaaa5;
+  background-color: #666666;
+}
+/*copyright text*/
+#Copyright {
+  text-align: center;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  position: relative;
+  top: 2rem;
 }
