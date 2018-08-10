@@ -1,0 +1,36 @@
+body {
+  background-color: darkgray;
+}
+.container {
+  width: 100%;
+}
+.block1 {
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem 1rem;
+  position: absolute;
+  top: 0%;
+  width: 40%;
+}
+.block2 {
+  background-color: lightgray;
+  padding: 2rem;
+  margin: 2rem 1rem;
+  position: relative;
+  width: 40%;
+  left: 50%;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-color: black;
+    transition: 2s;
+  }
+  .block1 {
+    position: static;
+    transition: 2s;
+  }
+  .block2 {
+    position: static;
+    transition: 2s;
+  }
+}
